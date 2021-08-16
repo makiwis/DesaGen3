@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 16px;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.container{
+    width: 100%;
+}
+.cabecera{
+    background-color:#4d4d4d;
+    display:flex;
+    justify-content: space-between;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 1px 9px 1px #00000094;
+}
+.cabecera .logo{
+    margin: 0 15px;
+    text-align: center;
+    position: relative;
+    width: 30%;
+}
+.cabecera .logo img{
+    width: 25%;
+    position: absolute;
+    top: 10px;
+    right: 10%;
+}
+.menu{
+    align-self: center;
+    margin-left: 15px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu ul li{
+    padding: 30px;
+    margin:0 5px;
+    color: #ffffff;
+    font-size: 16px;
+}
+.menu ul li:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+     transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+.banner{
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position:left -113px;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+.section{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+.div-izq{
+    padding: 30px;
+}
+.div-der{
+    padding: 30px;
+}
+.div-der h2{
+    font-size: 40px;
+    color: #745811;
+}
+.div-der small{
+    margin: 5px 0 15px;
+    display: inline-block;
+    background-color: darkgoldenrod;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 3px;
+}
+.div-der a{
+    color: #745811;
+    margin: 15px 0;
+    display: block;
+}
+.div-der a:hover{
+    color: goldenrod;
+    transition: background-color 0.5s ease;
+
+}
+/*MEDIAS*/
+@media only screen and (max-width:768px){
+    .cabecera{
+        justify-content: center;
+    }
+    .cabecera .logo{
+        display: none;
+    }
+    .menu ul li {
+        padding: 10px;
+    }
+    .banner{
+        background-image: url(../img/banner-mobile.jpg);
+        background-position: left bottom;
+    }
+    .section {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .div-der {
+        padding: 70px;
+        width: 100%;
+    }
+    .div-izq {
+        padding: 30px;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:430px){
+    .div-izq img {
+        width: 75%;
+    }
+    .div-der {
+        padding: 35px;
+    }
+}
